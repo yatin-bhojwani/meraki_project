@@ -1,4 +1,6 @@
 import "./globals.css";
+import Header from "../components/Header";
+
 
 export const metadata = {
   title: "Meraki-Culinary Arts Society,IITK",
@@ -15,7 +17,11 @@ export default function RootLayout({ children }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         />
       </head>
-      <body>{children}</body>
+      
+      <body>
+        <Header />
+        {children}
+        </body>
     </html>
   );
 }
